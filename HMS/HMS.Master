@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HMS.master.cs" Inherits="HMS.HMS" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HMS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/masterStyle.css" rel="stylesheet" />
+    <link href="css/masterStyle.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <%--baner--%>
+                    <div class="col-md-12 baner" align="center" style="height:100px; background:#AFCBCD;
+        font-weight:bold; font-size:100pt;  color:black;">
+                        <h5>Hospital Management System</h5>
+
+                    </div>
+
+                    <%--menu--%>
+                    <div class="col-md-12 Msmenu" style="height:50px; background-color:#C1D6B8;">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home.aspx">Home</a></li>
+                            <li><a href="#">Enroll Patient</a></li>
+                            <li><a href="#">Diagnosis Details</a></li>
+                            <li><a href="PatientHistory.aspx">Patient History</a></li>
+                            <li><a href="#">Add Physician</a></li>
+                            <li><a href="#">Physician Search</a></li>
+                        </ul>
+
+                    </div>
+
+                    <%--body--%>
+                    <div class="col-md-12 manibody">
+                        <div class="col-md-2 bodyLeft" style="height:600px; border-right:10px solid #9E9E9E; background:repeating-linear-gradient(#00A6E3)">
+                            <asp:ContentPlaceHolder ID="CPHleft" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+
+                        <div class="col-md-10 bodyRight">
+                            <asp:ContentPlaceHolder ID="CPHrightmain" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+                    <%--footer--%>
+                    <div class="col-md-12 footer" style="font-weight: bold; color:#fb052b; background-color:#808080" align="center" >
+                        Copyrights&copy;Reserved to: Mahmud Wali
+                    </div>
+
+                </div>
+
+            </div>
+    
+            </div>
+    </form>
+</body>
+</html>

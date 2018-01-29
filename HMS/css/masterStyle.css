@@ -1,0 +1,21 @@
+﻿body {
+    height:100%;
+}
+
+.row{
+
+}
+
+.baner{
+    height:100px;
+    background:radial-gradient(#AFCBCD,#EFF284,#D7AC6A);
+    font-weight:bold;
+    font-size:40px;
+    font-family:'Comic Sans MS','Franklin Gothic';
+    color:black;
+}
+
+.Msmenu{
+    height:50px;
+    background-color:cadetblue;
+}
